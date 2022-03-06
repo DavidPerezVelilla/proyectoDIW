@@ -94,6 +94,30 @@
 			margin: 5px;
 			padding: 5px;
 		}
+
+		#cowboy {
+			width: 150px;
+			height: 150px;
+			background: url("images/temple_run_sprite_sheet.png") left center;
+			margin: 0 auto;
+		}
+
+
+		#walk:checked~#cowboy {
+			animation: walk 0.7s steps(10, end) infinite;
+		}
+
+		@keyframes walk {
+			from {
+				background-position: 0px -450px;
+			}
+
+			to {
+				background-position: -1500px -450px;
+			}
+		}
+
+	
 	</style>
 </head>
 
@@ -156,7 +180,15 @@
 							</td>
 						</tr>
 						<tr>
-							<td><img border="2px" src="./images/hipster.jpg" align="left" style="padding: 20px"></td>
+							<td>
+								<div class="contenedor">
+								
+									<input type="radio" id="walk" name="movimiento" value="walk" checked style="display:none;"><label
+										for="walk" style="display:none;">Walk</label>
+									
+									<div id="cowboy"></div>
+								</div>
+							</td>
 						</tr>
 						<tr align="center">
 							<td>
