@@ -9,7 +9,7 @@
 	<meta charset="es_ES.UTF-8">
 	<title>Gentleman - Contacto</title>
 	<link rel="icon" type="image/png" href="./images/logo.png" />
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
 	<style>
 		.zoom {
 			padding: 30px;
@@ -212,7 +212,7 @@
 			</tr>
 		</thead>
 
-		<tbody style="background-color: #EBEBEB" >
+		<tbody style="background-color: #EBEBEB">
 			<tr align="center">
 				<td>
 
@@ -251,61 +251,63 @@
 					</table>
 					<br>
 					<table align="center" bgcolor="grey">
+						<form method="post" action="">
 
-						<form>
-							<tr align="center">
-								<td>
-									<font face="Louis George Café" size="4" color="black">Nombre:&nbsp;&nbsp;</font>
-									<input type="text" name="respuesta">
-									<font face="Louis George Café" size="4" color="black">
-										&nbsp;&nbsp;Apellido:&nbsp;&nbsp;</font>
-									<input type="text" name="respuesta">
-									<font face="Louis George Café" size="4" color="black">&nbsp;&nbsp;E-mail de
-										contacto:&nbsp;&nbsp;</font>
-									<input type="text" name="respuesta">
-								</td>
-							</tr><br>
-							<tr align="center">
-								<td>
-									<font face="Louis George Café" size="4" color="black">Sexo:&nbsp;&nbsp;</font>
-									<input align="center" name="respuesta" type="radio"
-										value="Masculino"><label>Masculino</label>
-									<input name="respuesta" type="radio"
-										value="Femenino"><label>Femenino&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+							<div class="form-item">
+								<label>
+									<font face="Louis George Café" size="4" color="black">Nombre :</font>&nbsp;&nbsp;
+								</label>
+								<input type="text" name="name" class="w50">
+								&nbsp;&nbsp;
+								<label>
+									<font face="Louis George Café" size="4" color="black">Apellido :</font>&nbsp;&nbsp;
+								</label>
+								<input type="text" name="name" class="w50">
+								&nbsp;&nbsp;
+								<label>
+									<font face="Louis George Café" size="4" color="black">E-mail :</font>&nbsp;&nbsp;
+								</label>
+								<input type="text" name="name" class="w50">
+							</div>
 
-									<font face="Louis George Café" size="4" color="black">Productos en los que esta
-										interesado&nbsp;&nbsp;</font>
-									<input type="checkbox" name="barba" value="barba"><label>&nbsp;&nbsp;Para la
-										barba</label>
-									<input type="checkbox" name="pelo" value="pelo"><label>&nbsp;&nbsp;Para el
-										pelo</label>
-								</td>
-							</tr><br>
-							<tr align="center">
-								<td>
-									<font face="Louis George Café" size="4" color="black">¿Cómo nos ha
-										conocido?&nbsp;&nbsp;</font>
-									<select name=sensor>
-										<option value="amigo"> A través de un amigo</option>
-										<option value="anuncio"> Anuncios en internet</option>
-										<option value="gogle"> A través de Google</option>
-										<option value="otros"> Otros motivos</option>
-									</select>
-								</td>
-							</tr><br>
-							<tr align="center">
-								<td>
-									<font face="Louis George Café" size="4" color="black">Escriba aqui su
-										consulta:&nbsp;&nbsp;</font><br>
+
+							<div class="form-item">
+								<font face="Louis George Café" size="4" color="black">Productos en los que esta
+									interesado:&nbsp;&nbsp;</font>
+								<label class="is-checkbox"><input type="checkbox"> Para el cabello &nbsp;</label>
+								<label class="is-checkbox"><input type="checkbox"> Para la barba</label>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<font face="Louis George Café" size="4" color="black">Sexo:&nbsp;&nbsp;</font>
+								<label class="is-checkbox"><input type="radio"> Masculino &nbsp;</label>
+								<label class="is-checkbox"><input type="radio"> Femenino</label>
+							</div>
+
+
+							<div class="form-item">
+								<label>
+									<font face="Louis George Café" size="4" color="black">¿Como nos ha conocido? :
+									</font>
+								</label>
+								<select>
+									<option value="amigo"> A través de un amigo</option>
+									<option value="anuncio"> Anuncios en internet</option>
+									<option value="gogle"> A través de Google</option>
+									<option value="otros"> Otros motivos</option>
+								</select>
+							</div>
+
+							<div class="form-item">
+								<font face="Louis George Café" size="4" color="black">Escriba aqui su
+									consulta:&nbsp;&nbsp;</font><br>
 									<textarea cols="40" rows="10" name="consulta"></textarea>
-								</td>
-							</tr><br>
+							</div>
 
-							<tr align="center">
-								<td>
-									<a href="enviado.html"><input form="enviado.html" align="center" type="submit"
-											name="Enviar" value="Enviar"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
-										align="center" type="reset" name="Restablecer" value="Limpiar formulario">
+							<div class="form-item is-buttons">
+								<a href="enviado.html"><input form="enviado.html" align="center" type="submit"
+										name="Enviar" value="Enviar"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+									align="center" type="reset" name="Restablecer" value="Limpiar formulario">
+							</div>
+
 						</form>
 
 				</td>
