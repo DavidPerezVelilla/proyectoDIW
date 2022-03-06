@@ -93,6 +93,121 @@
 			margin: 5px;
 			padding: 5px;
 		}
+
+		.row {
+			margin-left: -5px;
+			margin-right: -5px;
+		}
+
+		.column {
+			float: left;
+			width: 50%;
+			padding: 5px;
+		}
+
+		[class*="col-"] {
+			width: 100%;
+		}
+
+		@media only screen and (min-width: 768px) {
+			.col-s-1 {
+				width: 8.33%;
+			}
+
+			.col-s-2 {
+				width: 16.66%;
+			}
+
+			.col-s-3 {
+				width: 25%;
+			}
+
+			.col-s-4 {
+				width: 33.33%;
+			}
+
+			.col-s-5 {
+				width: 41.66%;
+			}
+
+			.col-s-6 {
+				width: 50%;
+			}
+
+			.col-s-7 {
+				width: 58.33%;
+			}
+
+			.col-s-8 {
+				width: 66.66%;
+			}
+
+			.col-s-9 {
+				width: 75%;
+			}
+
+			.col-s-10 {
+				width: 83.33%;
+			}
+
+			.col-s-11 {
+				width: 91.66%;
+			}
+
+			.col-s-12 {
+				width: 100%;
+			}
+		}
+
+		@media only screen and (min-width: 1024px) {
+			.col-1 {
+				width: 8.33%;
+			}
+
+			.col-2 {
+				width: 16.66%;
+			}
+
+			.col-3 {
+				width: 25%;
+			}
+
+			.col-4 {
+				width: 33.33%;
+			}
+
+			.col-5 {
+				width: 41.66%;
+			}
+
+			.col-6 {
+				width: 50%;
+			}
+
+			.col-7 {
+				width: 58.33%;
+			}
+
+			.col-8 {
+				width: 66.66%;
+			}
+
+			.col-9 {
+				width: 75%;
+			}
+
+			.col-10 {
+				width: 83.33%;
+			}
+
+			.col-11 {
+				width: 91.66%;
+			}
+
+			.col-12 {
+				width: 100%;
+			}
+		}
 	</style>
 </head>
 
@@ -141,116 +256,120 @@
 
 		<tbody style="background-color: #EBEBEB">
 			<tr align="center">
-				<td width="80%">
-					<table align="center">
-						<p>
-							<font face="Gentleman in the Shadow" size="6" color="black">The Gentleman Barber </font>
-							<font face="Louis George Café" size="5" color="black" class="justifyText">es una empresa
-								joven especializada en el cuidado masculino.
-						</p>
-						<p>Si necesitas asesoramiento, no dudes en visitarnos o en</font> <a href="contacto.html">
-								<font face="Louis George Café" size="5" color="black" class="justifyText"><i>contactar
-										con nosotros.</i>
-							</a></p>
-						</font>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/Bz8HIRcKzv4"
-							style="padding: 20px" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</table>
-					<br><br><br>
-					<table align="center">
-						<p>
-							<font face="Louis George Café" size="5" color="black" class="justifyText">Podrás
-								encontrarnos:
-						</p>
-						</font>
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.712040250938!2d-0.8588274843195904!3d41.6619632868906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd591468c6b911f7%3A0xed112b3c10e416!2sAv.%20la%20Jota%2C%20102%2C%2050014%20Zaragoza!5e0!3m2!1ses!2ses!4v1606737496918!5m2!1ses!2ses"
-							width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-							aria-hidden="false" tabindex="0"></iframe>
-					</table>
-					<table>
-						<tr>
-							<td>
-								<font face="Gentleman in the Shadow" size="6" color="black">
-									<p>The Gentleman Barber</p>
-								</font>
-							</td>
-						</tr>
-					</table>
-				</td>
+				<td class="row">
+					<div class="col-9 col-s-12 column">
+						<table align="center">
+							<p>
+								<font face="Gentleman in the Shadow" size="6" color="black">The Gentleman Barber </font>
+								<font face="Louis George Café" size="5" color="black" class="justifyText">es una empresa
+									joven especializada en el cuidado masculino.
+							</p>
+							<p>Si necesitas asesoramiento, no dudes en visitarnos o en</font> <a href="contacto.html">
+									<font face="Louis George Café" size="5" color="black" class="justifyText">
+										<i>contactar
+											con nosotros.</i>
+								</a></p>
+							</font>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Bz8HIRcKzv4"
+								style="padding: 20px" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</table>
+						<br><br><br>
+						<table align="center">
+							<p>
+								<font face="Louis George Café" size="5" color="black" class="justifyText">Podrás
+									encontrarnos:
+							</p>
+							</font>
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.712040250938!2d-0.8588274843195904!3d41.6619632868906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd591468c6b911f7%3A0xed112b3c10e416!2sAv.%20la%20Jota%2C%20102%2C%2050014%20Zaragoza!5e0!3m2!1ses!2ses!4v1606737496918!5m2!1ses!2ses"
+								width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+								aria-hidden="false" tabindex="0"></iframe>
+						</table>
+						<table>
+							<tr>
+								<td>
+									<font face="Gentleman in the Shadow" size="6" color="black">
+										<p>The Gentleman Barber</p>
+									</font>
+								</td>
+							</tr>
+						</table>
 
 
-				<td width="20%">
-					<table align="center">
-						<caption>
-							<font face="Louis George Café" size="8" color="black">Ofertas</font>
-						</caption>
-						<br>
-						<tr>
-							<td align="center">
-								<a href="cabello.html"><img title="Kit anticaida" src="./images/Kit.png"
-										class="zoom"></a>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<font face="Louis George Café" size="3" color="black">
-									<p align="center">Kit Anticaida 49,90€ <strike>
-											<font face="Louis George Café Light">80€</font>
-										</strike> </p>
-								</font>
-							</td>
-						</tr>
+					</div>
+					<div class="col-2 col-s-12 column">
+						<table align="center">
+							<caption>
+								<font face="Louis George Café" size="8" color="black">Ofertas</font>
+							</caption>
+							<br>
+							<tr>
+								<td align="center">
+									<a href="cabello.html"><img title="Kit anticaida" src="./images/Kit.png"
+											class="zoom"></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<font face="Louis George Café" size="3" color="black">
+										<p align="center">Kit Anticaida 49,90€ <strike>
+												<font face="Louis George Café Light">80€</font>
+											</strike> </p>
+									</font>
+								</td>
+							</tr>
 
-						<tr>
-							<td align="center">
-								<a href="cabello.html"><img title="Champu" src="./images/champu.png" class="zoom"></a>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<font face="Louis George Café" size="3" color="black">
-									<p align="center">Champú Cold 500ml 9,90€ <strike>
-											<font face="Louis George Café Light">15€</font>
-										</strike> </p>
-								</font>
-							</td>
-						</tr>
+							<tr>
+								<td align="center">
+									<a href="cabello.html"><img title="Champu" src="./images/champu.png"
+											class="zoom"></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<font face="Louis George Café" size="3" color="black">
+										<p align="center">Champú Cold 500ml 9,90€ <strike>
+												<font face="Louis George Café Light">15€</font>
+											</strike> </p>
+									</font>
+								</td>
+							</tr>
 
-						<tr>
-							<td align="center">
-								<a href="Barba.html"><img class="zoom" title="Lavado Barba"
-										src="./images/lavado.png"></a>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<font face="Louis George Café" size="3" color="black">
-									<p align="center">Beard Wash Morgans 100ml 15,90€ <strike>
-											<font face="Louis George Café Light">18€</font>
-										</strike> </p>
-								</font>
-							</td>
-						</tr>
+							<tr>
+								<td align="center">
+									<a href="Barba.html"><img class="zoom" title="Lavado Barba"
+											src="./images/lavado.png"></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<font face="Louis George Café" size="3" color="black">
+										<p align="center">Beard Wash Morgans 100ml 15,90€ <strike>
+												<font face="Louis George Café Light">18€</font>
+											</strike> </p>
+									</font>
+								</td>
+							</tr>
 
-						<tr>
-							<td align="center">
-								<a href="Barba.html"><img class="zoom" title="Kit grande"
-										src="./images/kitgrande.png"></a>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<font face="Louis George Café" size="3" color="black">
-									<p align="center">Sir Fausto Kit Grande 105,90€ <strike>
-											<font face="Louis George Café Light">190€</font>
-										</strike> </p>
-								</font>
-							</td>
-						</tr>
-					</table>
+							<tr>
+								<td align="center">
+									<a href="Barba.html"><img class="zoom" title="Kit grande"
+											src="./images/kitgrande.png"></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<font face="Louis George Café" size="3" color="black">
+										<p align="center">Sir Fausto Kit Grande 105,90€ <strike>
+												<font face="Louis George Café Light">190€</font>
+											</strike> </p>
+									</font>
+								</td>
+							</tr>
+						</table>
+					</div>
 				</td>
 			</tr>
 		</tbody>
